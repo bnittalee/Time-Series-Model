@@ -25,7 +25,7 @@ As you can see, the visualization shows the median home price from April 1996 to
 
 ## SARIMAX Model 
 
-FIn this project, I opted to implement a SARIMAX model as it is well-suited for capturing the seasonality in real estate prices, which tend to exhibit seasonal patterns. This model comprises autoregressive and moving average components and enables us to specify distinct orders for both. Additionally, we can introduce seasonal orders that permit further customization of the model to better align with the data for each zip code. One of the benefits of the SARIMAX model is that it provides interpretable results.
+For this project, I opted to implement a SARIMAX model as it is well-suited for capturing the seasonality in real estate prices, which tend to exhibit seasonal patterns. This model comprises autoregressive and moving average components and enables us to specify distinct orders for both. Additionally, we can introduce seasonal orders that permit further customization of the model to better align with the data for each zip code. One of the benefits of the SARIMAX model is that it provides interpretable results.
 To forecast future home values for the next four years, I utilized the resampled data as a data point.
 
 ## Results 
