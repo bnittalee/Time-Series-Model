@@ -28,4 +28,48 @@ As you can see, the visualization shows the median home price from April 1996 to
 FIn this project, I opted to implement a SARIMAX model as it is well-suited for capturing the seasonality in real estate prices, which tend to exhibit seasonal patterns. This model comprises autoregressive and moving average components and enables us to specify distinct orders for both. Additionally, we can introduce seasonal orders that permit further customization of the model to better align with the data for each zip code. One of the benefits of the SARIMAX model is that it provides interpretable results.
 To forecast future home values for the next four years, I utilized the resampled data as a data point.
 
-## Results
+## Results 
+<img src="https://github.com/bnittalee/Time-Series-Model/blob/main/Images/Result_data_frame.png" width="1000">
+
+Each zipcode has the low and high confidence intervals, forecast range, the low end and high end of the forecast range and the ROI. 
+
+The low confidence interval and high confidence interval represent the lower and upper bounds of the range within which the true value of the predicted median home values is expected to fall. Basically, there’s a 95% chance that the true median home value for a given zip code will fall within the range defined by the low and high confidence intervals. 
+
+The low end and high end of the forecast represents the lower and upper bounds, of the predicted range of median home values for a given zip code. These values are calculated using the SARIMAX model and historical data. They represent the range within which the true median home value is expected to fall based on the model’s predictions. 
+
+The forecast range is the difference between the high end and low end values of the predicted range. 
+
+<img src="https://github.com/bnittalee/Time-Series-Model/blob/main/Images/ROI-results.png" width="1000">
+
+## Recommendations 
+For those who are intersted investing in properties in New Mexico, there are the following zipcodes that has a high return on investment.
+
+1. Corrales, NM (87048)
+2. Albuquerque, NM (87106)
+3. Santa Ana Pueblo, NM (87043) - Santa Ana Pubelo's median value in 2018 was 375,097 and $441,8790.
+4. Albuquerque, NM (87104)
+5. Albuquerque, NM (87122)
+
+The model's inability to generate realistic forecasts resulted in identical forecast ranges for zipcodes 87048, 87106, 87104, and 87122. However, analyzing the ROI paints a different picture. Investors seeking property in New Mexico would be better off considering Corrales or Santa Ana Pueblo. A 2023 Zillow search revealed that Santa Ana Pueblo's home prices range from  $1,795,950, while Corrales' prices range from $3,800,000. These wide ranges suggest that further investigation of these zipcodes could reveal intriguing insights.
+
+## Next Steps
+1. Further investigation into Santa Ana Pueblo and Corrales.
+2. Include external factors that may influence real estate prices, such as population growth or unemployment rates.
+3. Investigate rapidly growing neighborhoods in New Mexico.
+
+See the full analysis in the [Jupyter Notebook](https://github.com/bnittalee/Time-Series-Model/blob/main/Final-Notebook.ipynb)
+
+For additional info, contact Brittney Nitta-Lee at [bnittalee@gmail.com](mailto:bnittalee@gmail.com)
+
+## Repository Structure
+
+```
+├── .ipynb_checkpoints/
+├── Data
+├── Images
+├── PDFS
+├── .DS_Store
+├── .gitattributes
+├── Notebook.ipynb
+└── README.md
+```
