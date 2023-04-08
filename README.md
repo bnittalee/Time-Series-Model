@@ -70,6 +70,7 @@ For additional info, contact Brittney Nitta-Lee at [bnittalee@gmail.com](mailto:
 ├── PDFS
 ├── .DS_Store
 ├── .gitattributes
-├── Notebook.ipynb
+├── Final-Notebook.ipynb
 └── README.md
+└── Zillow_data.csv
 ```
