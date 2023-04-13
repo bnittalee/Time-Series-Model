@@ -1,6 +1,7 @@
 ## New Mexico, Albuquerque: Top 5 zip codes to invest in
 <img src="https://github.com/bnittalee/Time-Series-Model/blob/main/Images/ethan-wright-magoon-l0iyYnf5l3w-unsplash.jpg" width="1000">
 By Brittney Nitta-Lee
+April 11, 2023 
 
 # Business and Data Understanding 
 My clients are real estate investors with a focus on properties in King County. Seeking to escape the cold weather, they are interested in exploring investment opportunities in Albuquerque, New Mexico. I will identify five potential zip codes for investment in the area and provide a list of recommendations along with suggested next steps.
@@ -42,7 +43,7 @@ The forecast range is the difference between the high end and low end values of 
 <img src="https://github.com/bnittalee/Time-Series-Model/blob/main/Images/ROI-results.png" width="1000">
 
 ## Recommendations 
-For those who are intersted investing in properties in New Mexico, there are the following zipcodes that has a high return on investment.
+For those who are interested investing in properties in New Mexico, these are the following zipcodes that has a high return on investment.
 
 1. Corrales, NM (87048)
 2. Albuquerque, NM (87106)
@@ -50,7 +51,15 @@ For those who are intersted investing in properties in New Mexico, there are the
 4. Albuquerque, NM (87104)
 5. Albuquerque, NM (87122)
 
-The model's inability to generate realistic forecasts resulted in identical forecast ranges for zipcodes 87048, 87106, 87104, and 87122. However, analyzing the ROI paints a different picture. Investors seeking property in New Mexico would be better off considering Corrales or Santa Ana Pueblo. A 2023 Zillow search revealed that Santa Ana Pueblo's home prices range from  $1,795,950, while Corrales' prices range from $3,800,000. These wide ranges suggest that further investigation of these zipcodes could reveal intriguing insights.
+The model's inability to generate realistic forecasts resulted in identical forecast ranges for zipcodes 87048, 87106, 87104, and 87122. However, analyzing the ROI paints a different picture. Investors seeking property in New Mexico would be better off considering Corrales (87048) or Santa Ana Pueblo (87043). A 2023 Zillow search revealed that Santa Ana Pueblo's home prices range from  $1,795,950, while Corrales' prices range from $3,800,000. These wide ranges suggest that further investigation of these zipcodes could reveal intriguing insights.
+
+<img src="https://github.com/bnittalee/Time-Series-Model/blob/main/Images/87043.png" width="1000">
+
+The SARIMAX model peformed best on zip code 87043 and provided realistic results. The 95% confidence level is between $375,097 and $441,879. The confidence range is $66,782. Below is the ACF plot for zip code 87043. 
+
+<img src="https://github.com/bnittalee/Time-Series-Model/blob/main/Images/ACF.png" width="1000">
+
+The ACF plot is a bar chart of coefficients of correlation between a time series and it's lagged values. The blue area shows the 95% confidence interval and is an indicator of the significance threshold. Anything within the blue area is statistically close to zero and anything outside the blue are is a statistically close to non-zero. There's a strong correlation at lag 1 and lag 2. There are not many autocorrelations that are significantly non-zero, which is a good indications for a time series model, as it suggests that the model has captured the underlying patterns in the data.
 
 ## Next Steps
 1. Further investigation into Santa Ana Pueblo and Corrales.
