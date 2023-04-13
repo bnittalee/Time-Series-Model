@@ -81,5 +81,4 @@ For additional info, contact Brittney Nitta-Lee at [bnittalee@gmail.com](mailto:
 ├── .gitattributes
 ├── Final-Notebook.ipynb
 └── README.md
-└── Zillow_data.csv
 ```
