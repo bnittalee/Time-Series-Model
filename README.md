@@ -46,7 +46,7 @@ For those who are intersted investing in properties in New Mexico, there are the
 
 1. Corrales, NM (87048)
 2. Albuquerque, NM (87106)
-3. Santa Ana Pueblo, NM (87043) - Santa Ana Pubelo's median value in 2018 was 375,097 and $441,8790.
+3. Santa Ana Pueblo, NM (87043) 
 4. Albuquerque, NM (87104)
 5. Albuquerque, NM (87122)
 
