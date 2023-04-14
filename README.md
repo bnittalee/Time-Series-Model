@@ -32,7 +32,21 @@ To forecast future home values for the next four years, I utilized the resampled
 ## Results 
 <img src="https://github.com/bnittalee/Time-Series-Model/blob/main/Images/Result_data_frame.png" width="1000">
 
-Each zipcode has the low and high confidence intervals, forecast range, the low end and high end of the forecast range and the ROI. 
+Each zipcode has the low and high confidence intervals, RMSE, forecast range, the low end and high end of the forecast range and the ROI. 
+
+The baseline RMSE for each zip code is: 
+
+1. 87106, the train RMSE of 1992.74 and a test RMSE of 1763.69. The RMSE from the model is 4536. 
+
+2. 87122, the train RMSE is 2483.10, and the test RMSE is 2151.74. The RMSE from the model is 3155.22. 
+
+3. 87104, the train RMSE is 1084.01, while the test RMSE is 1848.21. The RMSE from the model is 5235.02. 
+
+4. 87048, the train RMSE is 3602.07, and the test RMSE is 2825.51. The RMSE from the model is 4128.81.
+
+5. 87043, the train RMSE is 2222.06, and the test RMSE is 3517.35. The RMSE from the model is 8373.23. 
+
+After conducting a grid search, the optimal parameters and the lowest RMSE were obtained. However, the RMSE of each model was higher than the baseline RMSE for every zip code, indicating that the optimized model's performance is actually worse.
 
 The low confidence interval and high confidence interval represent the lower and upper bounds of the range within which the true value of the predicted median home values is expected to fall. Basically, there’s a 95% chance that the true median home value for a given zip code will fall within the range defined by the low and high confidence intervals. 
 
